@@ -1,0 +1,2 @@
+D:\桌面\代码\github\ruangong\点名算法\Debug\点名算法.exe
+D:\桌面\代码\github\ruangong\点名算法\Debug\点名算法.pdb
