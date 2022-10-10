@@ -18,8 +18,5 @@
     <ClCompile Include="rand_absent.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="roll_call.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
