@@ -80,7 +80,7 @@ int main() {
 					temp[g++] = u;
 				}
 				maopao(temp, i);
-				for (k = 0; k < STUDENT_NUM * 2 / 3; k++) {
+				for (k = 0; k < STUDENT_NUM * 1 / 10; k++) {
 					u = temp[k];
 					cout << u << " ";
 					if (myclass[i].poi[j][u] == '0') {
@@ -96,7 +96,7 @@ int main() {
 						YE++;
 					}
 					E++;
-					if (t == 1)break;
+					//if (t == 2)break;
 				}
 
 			}
