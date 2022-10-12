@@ -125,7 +125,7 @@ public:
         MyRand(num_bad_stu,90, bad_stu);
         for (auto& e : bad_stu)
         {
-            cout << "常驻差生：" << e << endl;
+            //cout << "常驻差生：" << e << endl;
             stus[e]._bad_stu = true;
         }
         
@@ -215,16 +215,16 @@ int main()
     Save(class_list);
     sort(bad.begin(), bad.end());
 
-    cout << "差生绩点" << endl;
-    for (auto& e : bad)
-    {
-        cout << e << endl;
-    }
-    sort(normal.begin(), normal.end());
-    cout << "普通绩点" << endl;
-    for (auto& e : normal)
-    {
-        cout << e << endl;
-    }
+    ////cout << "差生绩点" << endl;
+    //for (auto& e : bad)
+    //{
+    //    cout << e << endl;
+    //}
+    //sort(normal.begin(), normal.end());
+    ////cout << "普通绩点" << endl;
+    //for (auto& e : normal)
+    //{
+    //    cout << e << endl;
+    //}
     return 0;
 }

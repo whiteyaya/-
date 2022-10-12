@@ -1,4 +1,4 @@
 ﻿  源.cpp
-D:\桌面\代码\github\ruangong\called\源.cpp(11,1): warning C4005: “_CRT_SECURE_NO_WARNINGS”: 宏重定义
+D:\桌面\代码\github\ruangong\called\源.cpp(10,1): warning C4005: “_CRT_SECURE_NO_WARNINGS”: 宏重定义
 D:\桌面\代码\github\ruangong\called\源.cpp(1): message : 参见“_CRT_SECURE_NO_WARNINGS”的前一个定义
   called.vcxproj -> D:\桌面\代码\github\ruangong\called\Debug\called.exe

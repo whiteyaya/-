@@ -6,7 +6,6 @@
 #include <cmath>
 #include <cstdlib>
 #include<windows.h>
-#include<stdio.h>
 #include<fstream>
 #define _CRT_SECURE_NO_WARNINGS
 #define CLASS_NUM 5
@@ -69,7 +68,9 @@ int main() {
 		int spoi[STUDENT_NUM] = { 0 };
 		int u = 0, k;
 		int temp[STUDENT_NUM] = { 0 };
+		cout << "course:" << i << endl;
 		for (int j = 0; j < COURSE_NUM; j++) {
+			cout << "class:" << j<<":";
 			int t = 0;
 			int g = 0;
 			if (j < 3) {
@@ -81,6 +82,7 @@ int main() {
 				maopao(temp, i);
 				for (k = 0; k < STUDENT_NUM * 2 / 3; k++) {
 					u = temp[k];
+					cout << u << " ";
 					if (myclass[i].poi[j][u] == '0') {
 						t++;
 						if (spoi[u] != 1)
@@ -94,7 +96,7 @@ int main() {
 						YE++;
 					}
 					E++;
-					if (t == 3)break;
+					if (t == 1)break;
 				}
 
 			}
@@ -103,6 +105,7 @@ int main() {
 				for (int l = 0; l < 11; l++) {
 					if (mpoi[l] == 0)continue;
 					int m = mpoi[l] - 1;
+					cout << m << " ";
 					if (myclass[i].poi[j][m] == '0') {
 						YE++;
 						npoi[l]--;
@@ -112,9 +115,14 @@ int main() {
 					E++;
 				}
 			}
+			cout << endl;
 		}
-
+		cout << endl;
 	}
 	E = YE / E;
+	FILE* fpp;
+	fpp = fopen("E_data.txt", "a+");
 	cout << E;
+	fprintf(fpp, "%.3lf\n", E);
+	fclose(fpp);
 }
